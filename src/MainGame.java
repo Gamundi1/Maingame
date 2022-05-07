@@ -12,7 +12,8 @@ public class MainGame {
         deck.barajarCartas();
         deck.repartirCartas(p1,p2,p3,p4);
         deck.mostrarBaraja();
-        System.out.println(p1);
+        comenzarJuego();
+
     }
 
 
@@ -29,13 +30,16 @@ public class MainGame {
             deck.añadirCarta(card);
         }
         for(int i = 0;i<13;i++){
-            card = new Carta("heart",i+1);
+            card = new Carta("hearts",i+1);
             deck.añadirCarta(card);
         }
         for(int i = 0;i<13;i++){
             card = new Carta("spades",i+1);
             deck.añadirCarta(card);
         }
+    }
+    public void comenzarJuego(){
+
     }
     public static void main(String[] args) {
         new MainGame().Inicio();
